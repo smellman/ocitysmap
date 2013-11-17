@@ -31,7 +31,7 @@ import shapely.wkt
 # placement-type="simple") is required for OCitySMap (see INSTALL),
 # instead of importing mapnik2, we import mapnik and assert it isn't
 # an old version.
-import mapnik
+import mapnik2 as mapnik
 assert mapnik.mapnik_version >= 200100, \
     "Mapnik module version %s is too old, see ocitysmap's INSTALL " \
     "for more details." % mapnik.mapnik_version_string()
